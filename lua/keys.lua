@@ -8,6 +8,6 @@ map('n', 'nt', [[:NvimTreeToggle]], {})
 map('n', 'l', [[:IndentLinesToggle]], {})
 map('n', 't', [[:TagbarToggle]], {})
 map('n', 'ff', [[:Telescope find_files]], {})
-
+map('n', '<leader>s', [[:setlocal spell]], {})
 
 
