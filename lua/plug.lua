@@ -75,8 +75,9 @@ return packer.startup(function(use)
     use 'honza/vim-snippets'
     use 'dcampos/nvim-snippy'
     use 'dcampos/cmp-snippy'
+    use {'fatih/vim-go', { run = ':GoUpdateBinaries' }}
 
-if PACKER_BOOTSTRAP then
-    require('packer').sync()
-end
+    if PACKER_BOOTSTRAP then
+        require('packer').sync()
+    end
 end)

@@ -11,15 +11,14 @@ require('vars')      -- Variables
 require('opts')      -- Options
 require('keys')      -- Keymaps
 require('plug')      -- Plugins
-require('user.lsp')  -- lsp configs
-require('user.cmp')
+
 
 require('nvim-tree').setup{}
 require('lualine').setup {
     options = {
         theme = 'dracula-nvim'
+        }
     }
-}
 require('nvim-autopairs').setup{} -- Add this line
 
 -- [[ Treesitter ]]
@@ -42,7 +41,7 @@ require'nvim-treesitter.configs'.setup {
 
     indent = {
         enable = true,
-    },
+        },
     highlight = {
         enable = true,
 
@@ -57,5 +56,5 @@ require'nvim-treesitter.configs'.setup {
         -- Using this option may slow down your editor, and you may see some duplicate highlights.
         -- Instead of true it can also be a list of languages
         additional_vim_regex_highlighting = false,
-    },
-}
+        },
+    }
