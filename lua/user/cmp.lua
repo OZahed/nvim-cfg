@@ -58,8 +58,8 @@ local lsp = require 'lspconfig'
 local cmp_lsp = require 'cmp_nvim_lsp'
 
 lsp.vimls.setup {
-    capabilities = cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities()),
-
+    capabilities = cmp_lsp.default_capabilities(),
+    
     require('lspconfig')['pyright'].setup {
         capabilities = capabilities
     },

@@ -11,6 +11,8 @@ require('vars')      -- Variables
 require('opts')      -- Options
 require('keys')      -- Keymaps
 require('plug')      -- Plugins
+require('user.lsp')
+require('user.cmp')
 
 
 require('nvim-tree').setup{}
